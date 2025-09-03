@@ -14,8 +14,6 @@ versionamento de modelos** de Inteligência Artificial, Machine e Processamento 
 
 ## Estrutura de Pastas
 
-A estrutura foi simplificada para refletir o foco em Ciência de Dados.
-
 ```
 /
 ├── .docker/
