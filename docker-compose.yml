@@ -1,0 +1,12 @@
+services:
+  jupyterlab:
+    image: tensorflow/tensorflow:2.17.0-jupyter
+    container_name: jupyterlab_tf_2_17
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/tf/project
+    working_dir: /tf/project
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
+    restart: unless-stopped
