@@ -1,0 +1,50 @@
+
+# 1. Arquivos do Docker e Git
+.git/
+.gitignore
+.dockerignore
+
+# 2. Ambientes Virtuais do Python
+venv/
+env/
+.venv/
+.env/
+pyvenv.cfg
+*.egg-info/
+
+# 3. Segredos e Arquivos de Configuração
+.env
+credentials.*
+config.ini
+*.pem
+*.key
+
+# 4. Caches e Bytecode do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 5. Arquivos específicos do Jupyter Notebook
+.ipynb_checkpoints/
+.jupyter/
+
+# 6. Arquivos de Dados e Modelos
+*.csv
+*.json
+*.parquet
+*.db
+*.sqlite3
+*.pkl
+*.pickle
+*.joblib
+*.h5
+
+# 7. Arquivos de IDEs, Testes e Sistema Operacional
+.vscode/
+.idea/
+.pytest_cache/
+.coverage
+*.log
+.DS_Store
+Thumbs.db

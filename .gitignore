@@ -1,0 +1,84 @@
+# Arquivo .gitignore para projetos Python e Jupyter Notebook
+
+# 1. Ambientes Virtuais
+/venv/
+/env/
+/.venv/
+/.env/
+/activate
+/pyvenv.cfg
+/include/
+/lib/
+/lib64/
+/Scripts/
+/bin/
+
+# 2. Segredos e Arquivos de Configuração
+.env
+credentials.*
+config.ini
+*.pem
+*.key
+
+# 3. Caches e Bytecode do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# 4. Arquivos específicos do Jupyter Notebook
+.ipynb_checkpoints/
+.jupyter/
+.virtual_documents/
+
+# 5. Arquivos de Dados
+*.csv
+*.json
+*.jsonl
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.xls
+*.xlsx
+*.data
+*.dat
+
+# 6. Modelos de Machine Learning e Artefatos
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.weights
+
+# 7. Logs e Relatórios
+*.log
+*.html
+*.pdf
+
+# 8. Arquivos de Build e Distribuição
+build/
+dist/
+*.egg-info/
+*.egg
+
+# 9. Arquivos de Testes
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+nosetests.xml
+
+# 10. Arquivos de IDEs e Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 11. Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+._*
