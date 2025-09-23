@@ -1,18 +1,17 @@
-# Repositório Destinado aos Modelos de IA, ML & NLP
+# Repository for AI, ML & NLP Models
 
-Este diretório é focado no **treinamento, experimentação,
-versionamento de modelos** de Inteligência Artificial, Machine e Processamento de Linguagem Natural.
+This directory is focused on the **training, experimentation, and versioning of models** for Artificial Intelligence, Machine Learning, and Natural Language Processing.
 
-## Sumário
+## Table of Contents
 
-- [Estrutura de Pastas](#estrutura-de-pastas)
-- [Começando](#começando)
-    - [Pré-requisitos](#pré-requisitos)
-    - [Configuração e Execução](#configuração-e-execução)
-- [Ambiente Docker](#ambiente-docker)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  - [Folder Structure](https://www.google.com/search?q=%23folder-structure)
+  - [Getting Started](https://www.google.com/search?q=%23getting-started)
+      - [Prerequisites](https://www.google.com/search?q=%23prerequisites)
+      - [Setup and Execution](https://www.google.com/search?q=%23setup-and-execution)
+  - [Docker Environment](https://www.google.com/search?q=%23docker-environment)
+  - [Technologies Used](https://www.google.com/search?q=%23technologies-used)
 
-## Estrutura de Pastas
+## Folder Structure
 
 ```
 /
@@ -34,56 +33,54 @@ versionamento de modelos** de Inteligência Artificial, Machine e Processamento 
 └── README.md
 ```
 
-- **`.docker/`**: Configurações do nosso ambiente de desenvolvimento com Docker, TensorFlow e Jupyter.
-- **`data/`**: Destinado a **amostras de dados** ou datasets para desenvolvimento.
-- **`notebooks/`**: Jupyter Notebooks para análise exploratória, desenvolvimento de modelos e avaliação de resultados.
-- **`scripts/`**: Scripts Python automatizados para **treinamento**, **avaliação** de modelos.
-- **`src/`**: Código fonte reutilizável (pipelines, pré-processadores, etc.) usado pelos notebooks e scripts.
-- **`models/`**: Diretório para salvar artefatos de modelos.
+  - **`.docker/`**: Configurations for our development environment with Docker, TensorFlow, and Jupyter.
+  - **`data/`**: Intended for **data samples** or datasets for development.
+  - **`notebooks/`**: Jupyter Notebooks for exploratory analysis, model development, and results evaluation.
+  - **`scripts/`**: Automated Python scripts for model **training** and **evaluation**.
+  - **`src/`**: Reusable source code (pipelines, preprocessors, etc.) used by notebooks and scripts.
+  - **`models/`**: Directory to save model artifacts.
 
-## Começando
+## Getting Started
 
-Siga os passos abaixo para configurar e executar o ambiente de desenvolvimento localmente.
+Follow the steps below to set up and run the development environment locally.
 
-### Pré-requisitos
+### Prerequisites
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+  - [Docker](https://www.docker.com/get-started)
+  - [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Configuração e Execução
+### Setup and Execution
 
-1. **Clone o repositório:**
+1.  **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/manolito-fatec/ai-server-2025-2.git
-   cd ai-server-2025-2
-   ```
+    ```bash
+    git clone https://github.com/manolito-fatec/ai-server-2025-2.git
+    cd ai-server-2025-2
+    ```
 
-2. **Construa e suba o container Docker:**
+2.  **Build and run the Docker container:**
 
-   ```bash
-   docker-compose up --build -d
-   ```
+    ```bash
+    docker-compose up --build -d
+    ```
 
-3. **Acesse o Jupyter Lab:**
-   Após o container iniciar, verifique os logs para obter o token de acesso:
+3.  **Access Jupyter Lab:**
+    After the container starts, check the logs to get the access token:
 
-   ```bash
-   docker-compose logs
-   ```
+    ```bash
+    docker-compose logs
+    ```
 
-   Procure por uma URL como `http://127.0.0.1:8888/lab?token=...` e abra no seu navegador.
+    Look for a URL like `http://127.0.0.1:8888/lab?token=...` and open it in your browser.
 
-## Ambiente Docker
+## Docker Environment
 
-Nosso ambiente de desenvolvimento é encapsulado em um container Docker para garantir consistência e reprodutibilidade.
+Our development environment is encapsulated in a Docker container to ensure consistency and reproducibility.
 
-- **`docker-compose.yml`**: Orquestra nosso serviço, mapeando a porta `8888` e montando o diretório do projeto como um
-  volume para desenvolvimento interativo.
+  - **`docker-compose.yml`**: Orchestrates our service, mapping port `8888` and mounting the project directory as a volume for interactive development.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-<h3>Ferramentas e Frameworks Principais:</h3>
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
 <a href="https://www.tensorflow.org/" target="_blank"><img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow"></a>
 <a href="https://jupyter.org/" target="_blank"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white" alt="Jupyter"></a>
