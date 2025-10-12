@@ -1,6 +1,6 @@
 services:
   jupyterlab:
-    image: tensorflow/tensorflow:2.17.0-jupyter
+    build: .
     container_name: jupyterlab_tf_2_17
     networks:
       - pardal-ai-network
