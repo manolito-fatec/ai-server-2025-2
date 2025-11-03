@@ -1,7 +1,9 @@
 services:
   jupyterlab:
-    image: tensorflow/tensorflow:2.17.0-jupyter
+    build: .
     container_name: jupyterlab_tf_2_17
+    networks:
+      - pardal-ai-network
     ports:
       - "8888:8888"
     volumes:
@@ -10,3 +12,8 @@ services:
     environment:
       - JUPYTER_TOKEN=${JUPYTER_TOKEN}
     restart: unless-stopped
+
+networks:
+  pardal-ai-network:
+    external:
+      name: web-server-2025-2_pardal-network
